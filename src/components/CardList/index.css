@@ -1,0 +1,21 @@
+.tagList {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.errorMessage {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}

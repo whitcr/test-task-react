@@ -1,0 +1,36 @@
+.section {
+  margin-top: 40px;
+  background-image: url('../../../images/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px 0;
+}
+
+.title {
+  text-align: center;
+  color: var(--white-color);
+  margin-bottom: 12px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.iconParallax {
+  transform: translateZ(20px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .iconParallax {
+  transform: translateZ(40px);
+}

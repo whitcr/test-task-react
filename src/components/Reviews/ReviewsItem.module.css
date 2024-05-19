@@ -1,0 +1,41 @@
+.review {
+  border-radius: 4px;
+
+  margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rating {
+  color: goldenrod;
+}
+
+.star {
+  font-size: 18px;
+}
+
+.reviewText {
+  margin: 0;
+  color: var(--gray-color);
+
+  font-size: 16px;
+
+  font-weight: 400;
+}
+
+.image {
+  border-radius: 132px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,22 @@
+.NavList {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  background-color: var(--red-color);
+
+  padding: 20px;
+  font-size: 18px;
+}
+
+.NavLink {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.NavLink:hover {
+  color: var(--darker-white-color);
+}
+.active {
+  color: var(--white-color);
+}

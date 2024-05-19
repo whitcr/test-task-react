@@ -1,0 +1,31 @@
+.section {
+  margin-top: 40px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  text-align: center;
+  color: var(--dark-color);
+  margin-bottom: 12px;
+}
+
+.image {
+  flex: 1;
+  margin: 0 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.zoomImage {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover .zoomImage {
+  transform: scale(1.1);
+}

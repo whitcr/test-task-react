@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  gap: 24px;
+  max-width: 888px;
+  max-height: 358px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.imageContainer {
+  width: 290px;
+  height: 310px;
+  border-radius: 32px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 526px;
+  height: 310px;
+  justify-content: space-between;
+}
+
+.titlesContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+}
+
+.subtitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviews {
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.descriptionContainer {
+  width: 100%;
+}
+
+.description {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--gray-color);
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.tagsContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.iconFavContainer {
+  cursor: pointer;
+}

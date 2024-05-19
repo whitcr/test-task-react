@@ -1,0 +1,23 @@
+.section {
+  margin-top: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.card {
+  background-color: var(--darker-white-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
