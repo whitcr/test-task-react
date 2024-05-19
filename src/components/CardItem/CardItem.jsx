@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import styles from './CardItem.module.css';
 import { Button } from 'components/Button';
 import { Modal } from 'components/Modal/Modal';
@@ -17,15 +17,18 @@ export const CardItem = ({ item }) => {
     setIsModalOpen(true);
   };
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setIsModalOpen(false);
-  };
+  }, []);
 
-  const handleKeyUp = event => {
-    if (event.key === 'Escape') {
-      handleClose();
-    }
-  };
+  const handleKeyUp = useCallback(
+    event => {
+      if (event.key === 'Escape') {
+        handleClose();
+      }
+    },
+    [handleClose]
+  );
 
   useEffect(() => {
     if (isModalOpen) {
@@ -39,7 +42,7 @@ export const CardItem = ({ item }) => {
     return () => {
       document.removeEventListener('keyup', handleKeyUp);
     };
-  }, [isModalOpen]);
+  }, [isModalOpen, handleKeyUp]);
 
   const handleFavorite = () => {
     if (isFavorite) {

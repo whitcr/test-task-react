@@ -6,7 +6,6 @@ import {
   toggleEquipment,
   toggleVehicleType,
 } from 'store/filterSlice';
-import { Button } from 'components/Button';
 import { IconSVG } from 'components/Icon/Icon';
 import { selectFilter } from 'store/selector';
 
